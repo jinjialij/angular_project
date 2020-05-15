@@ -1,0 +1,55 @@
+<mat-toolbar class="headerToolbar">
+        <a routerLink="/"><mat-icon class="logo">local_mall</mat-icon></a>
+        <!-- modified from https://material.angular.io/components/input/examples -->
+        <!-- more information in readme file -->
+        <mat-form-field class="searchBar">
+            <input matInput placeholder="Search" type="search" [(ngModel)]="value">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''" type="button">
+                <mat-icon>close</mat-icon>
+            </button>
+            <mat-icon>search icon</mat-icon>
+        </mat-form-field>
+        <span class="spacer"></span>
+        <!-- the iconsNav shows when the viewpoint is bigger than 768px -->
+        <div class="iconNav">
+            <a routerLink="/">
+                <mat-icon class="icon">stores</mat-icon>
+                <span class="iconLabel">Stroes</span>
+            </a>
+
+            <a routerLink="/login">
+                <mat-icon class="icon">account_circle</mat-icon>
+                <span class="iconLabel">Account</span>
+            </a>
+            <mat-icon class="icon">shopping_cart</mat-icon>
+            <span class="iconLabel">Cart</span>
+        </div>
+        <!-- the side icon button shows only when the viewpoint is smaller than 768px -->
+        <!-- modified from https://material.angular.io/components/menu/examples -->
+        <!-- more information in readme file -->
+        <div class="sideIconNav">
+                <button mat-icon-button [matMenuTriggerFor]="iconMenu" aria-label="iconMenu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #iconMenu="matMenu">
+                    <button mat-menu-item>
+                        <a routerLink="/">
+                            <mat-icon class="iconInMenu">stores</mat-icon>
+                            <span class="iconInMenuLabel">Stroes</span>
+                        </a>
+                    </button>
+                    
+                    <button mat-menu-item>
+                        <a routerLink="/login">
+                            <mat-icon class="iconInMenu">account_circle</mat-icon>
+                            <span class="iconInMenuLabel">Account</span>
+                        </a>  
+                    </button>
+                     
+                    <button mat-menu-item>
+                            <mat-icon class="iconInMenu">shopping_cart</mat-icon>
+                            <span class="iconInMenuLabel">Cart</span>
+                    </button>
+                </mat-menu>
+        </div>
+</mat-toolbar>

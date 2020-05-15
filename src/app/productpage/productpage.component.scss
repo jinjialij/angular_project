@@ -1,0 +1,28 @@
+.specTabs{
+    color: black;
+}
+
+.specCollapse{
+    color:black;
+}
+
+.checked{
+    color: orange;
+}
+
+.price{
+    color:red;
+    font-weight: bold;
+}
+
+@media(max-width: 1024px){
+    .specTabs{
+        display: none;
+    }
+}
+
+@media(min-width: 1025px){
+    .specCollapse{
+        display: none;
+    }
+}

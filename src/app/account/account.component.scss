@@ -1,0 +1,25 @@
+.signIn{
+    margin: 10px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn>input{
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.accountheading{
+    display: inline;
+    vertical-align: middle;
+    color: #007bff;
+}
+
+.iconarrow{
+    display: inline-flex;
+    vertical-align: middle;
+    color: #007bff;
+}

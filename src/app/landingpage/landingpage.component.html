@@ -1,0 +1,157 @@
+<!-- the sidenav is modified from https://material.angular.io/components/sidenav/overview -->
+<!-- for more information, please see readme file -->
+<mat-sidenav-container (backdropClick)="close()">
+        <!-- this part use the sidenav of angular component. For more information, please refers to the readme file -->
+        <mat-sidenav #sidenav position="end" [(opened)]="opened" class="sidnavpanel" (keydown.escape)="close()">
+        <div class="list-group list-group-flush">
+            <a href="#offers"><button mat-button (click)="close()">More unmissable offers</button></a>
+            <a href="#popProd"><button mat-button (click)="close()">Popular products</button></a>
+        </div>
+        </mat-sidenav>
+        
+        <mat-sidenav-content>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-11">
+                        <!-- here uses Bootstrap carousel component https://getbootstrap.com/docs/4.3/components/carousel/ -->
+                        <!-- please read readme file for more information -->
+                        <div id="ad" class="carousel slide mt-2" data-ride="carousel">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/image/product.jpg" class="d-block w-100" alt="ad1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/product2.jpg" class="d-block w-100" alt="ad2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/product3.jpg" class="d-block w-100" alt="ad3">
+                                </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#ad" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#ad" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                        </div>
+                        <h2 class="heading2" id="offers">More unmissable offers</h2>
+                        <!-- here uses card deck Bootstrap 4 component https://getbootstrap.com/docs/4.3/components/card/#card-decks -->
+                        <div class="card-deck">
+                                <div class="card">
+                                    <img src="assets/image/product4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</h5>
+                                        <p class="card-text rating">
+                                            <span>3.41</span>
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon>star_border</mat-icon> 
+                                            <mat-icon>star_border</mat-icon>
+                                        </p>
+                                        <p class="card-text"><a routerLink="/product" class="btn btn-primary">Shop now</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="assets/image/product5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</h5>
+                                        <p class="card-text rating">
+                                            <span>3.41</span>
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon>star_border</mat-icon> 
+                                            <mat-icon>star_border</mat-icon>
+                                        </p>
+                                        <p class="card-text"><a routerLink="/product" class="btn btn-primary">Shop now</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/image/product.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</h5>
+                                        <p class="card-text rating">
+                                            <span>3.41</span>
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon>star_border</mat-icon> 
+                                            <mat-icon>star_border</mat-icon>
+                                        </p>
+                                        <p class="card-text"><a routerLink="/product" class="btn btn-primary">Shop now</a></p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <h2 class="heading2" id="popProd">Popular products</h2>
+                        <div class="card-deck">
+                                <div class="card">
+                                    <img src="assets/image/product2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</h5>
+                                        <p class="card-text rating">
+                                            <span>3.41</span>
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon>star_border</mat-icon> 
+                                            <mat-icon>star_border</mat-icon>
+                                        </p>
+                                        <p class="card-text"><a routerLink="/product" class="btn btn-primary">Shop now</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="assets/image/product3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</h5>
+                                        <p class="card-text rating">
+                                            <span>3.41</span>
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon>star_border</mat-icon> 
+                                            <mat-icon>star_border</mat-icon>
+                                        </p>
+                                        <p class="card-text"><a routerLink="/product" class="btn btn-primary">Shop now</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="bottom">
+                                    <img src="assets/image/product4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HP 15.6" Laptop - Black (AMD A6-9225 Processor/1TB HDD/8GB RAM/Windows 10) - English</h5>
+                                        <p class="card-text rating">
+                                            <span>3.41</span>
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon class="checked">star</mat-icon> 
+                                            <mat-icon>star_border</mat-icon> 
+                                            <mat-icon>star_border</mat-icon>
+                                        </p>
+                                        <p class="card-text"><a routerLink="/product" class="btn btn-primary">Shop now</a></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- side nav tool bar -->
+                    <div class="col-1 col-md-1 sidenav" ></div>
+                        <a href="#ad"><button mat-icon-button id="topButton">
+                            <mat-icon >vertical_align_top</mat-icon>
+                        </button></a>
+                        <button mat-icon-button (click)="sidenav.toggle()" id="sidenavButton">
+                            <mat-icon *ngIf="!opened">menu_open</mat-icon>
+                        </button>
+                        <a href="#bottom">
+                            <button mat-icon-button id="bottomButton">
+                                <mat-icon >vertical_align_bottom</mat-icon>
+                            </button></a>
+                    </div>         
+            </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

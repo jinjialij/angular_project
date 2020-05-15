@@ -1,0 +1,14 @@
+
+<div class="mat-app-background basic-container">
+  <app-header *ngIf="router != '/register' && router != '/login'"></app-header>
+  <app-navbar *ngIf="router != '/register' && router != '/login'"></app-navbar>
+  <app-landingpage *ngIf="router == '/home'"></app-landingpage>
+  <app-account *ngIf="router == '/login'"></app-account>
+  <app-registration *ngIf="router == '/register'"></app-registration>
+  <app-productpage *ngIf="router == '/product'"></app-productpage>
+  
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+
+

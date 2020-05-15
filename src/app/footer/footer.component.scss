@@ -1,0 +1,21 @@
+.footerGrid{
+    margin-top: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+.footerList{
+    margin-top: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+@media(min-width: 768px){
+    .footerList{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .footerGrid{
+        display: none;
+    }
+}

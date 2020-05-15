@@ -1,0 +1,48 @@
+<div class="container my-5">
+        <div class="row">
+          <div class="col"></div>
+          <!-- main content for sign in -->
+          <div class="col-11 col-md-5 mt-5">
+              <h2 class="mr-5">Sign In</h2>
+              <a mat-button routerLink="/register">
+                  <p class="accountheading h4">Or create an account</p>
+                  <!-- <mat-icon class="iconarrow">keyboard_arrow_right</mat-icon> -->
+              </a>
+             
+              <!-- codes below are modified from the [material.angular.io]([link](https://material.angular.io/components/form-field/overview))
+                for more information, please refers to the readme file -->
+              <form id="signin" class="signIn" [formGroup]="signin" (ngSubmit)="submitForm()" novalidate>
+                    <mat-form-field>
+                            <input matInput placeholder="Email Address" name="emailSignin" id="signinEmail" [(ngModel)]="emailSignin" formControlName="emailSignin" class="form-control">
+                            <mat-error *ngIf="signin.controls['emailSignin'].invalid">{{getEmailErrorMessage()}}</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" name="pwSignin" id="signinPass" [(ngModel)]="pwSignin" formControlName="pwSignin" class="form-control">
+                            <mat-error *ngIf="signin.controls['pwSignin'].invalid">{{getPwErrorMessage()}}</mat-error>
+                            <mat-error *ngIf="signin.controls['pwSignin'].invalid && signin.controls['pwSignin'].dirty || signin.controls['pwSignin'].touched">
+                                A valid password should contain at least one number, one capital letter and be at least 6 characters long
+                            </mat-error>
+                            <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" form="signin" value="Submit">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                    </mat-form-field>
+
+                <button mat-raised-button color="primary" id="signin" class="mt-5" type="submit" [disabled]="!signin.valid">Sign In</button>
+                <button mat-button class="mt-1"><a>Forget Passward?</a></button>
+              </form>
+              
+          </div>
+          <div class="col"></div>
+          <!-- div for registration -->
+          <div class="col-11 col-md-5 mt-5">
+            <p class="h4 mt-5">You could enjoy following benefits with an account:</p>
+                <mat-list>
+                    <mat-list-item><mat-icon class="">shopping_cart</mat-icon> Fast Checkout. </mat-list-item>
+                    <mat-list-item><mat-icon class="">my_location</mat-icon> Enjoy tracking. </mat-list-item>
+                    <mat-list-item><mat-icon class="">timeline</mat-icon> Quick recap. </mat-list-item>
+                </mat-list>
+          </div>
+          
+        </div>
+</div>

@@ -1,0 +1,72 @@
+input {
+    margin-right: -30px;
+    padding-right:30px;
+}
+
+.logo {
+    margin: 0px;
+    color: aliceblue;
+}
+
+.searchBar{
+    margin:3%;
+    color: aliceblue;
+}
+
+
+
+.icon {
+    padding: 0 14px;
+    color: aliceblue;
+}
+
+.spacer {
+flex: 1 1 auto;
+}
+
+.iconLabel{
+    margin:20px;
+    color: aliceblue;
+}
+
+.headerToolbar{
+    margin: 10px 0px;
+    height: 80px;
+    background-color:#007bff;
+}
+
+.iconInMenuLabel{
+    color: #007bff;
+}
+
+.iconInMenu{
+    color: #007bff;
+}
+
+@media(max-width: 768px){
+    .iconNav{
+        display: none;
+    }
+    .searchBar{
+        width: 55%;
+    }
+}
+
+@media(min-width: 768px){
+    .iconNav{
+        display: contents;
+    }
+    .searchBar{
+        width: 40%;
+    }
+    .headerToolbar{
+        margin: 10px 0px;
+        background-color:#007bff;
+    }
+    .sideIconNav{
+        display: none;
+    }
+}
+
+
+

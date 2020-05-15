@@ -1,0 +1,95 @@
+.rating{
+    font-size: 1.5em;
+}
+
+.checked{
+    color: orange;
+}
+
+.sidenav{
+    width: 35%;
+}
+
+.heading2{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidnavpanel{
+    width: 15%;
+}
+
+@media(max-width: 1023px){
+    .sidenav{
+        display: none;
+    }
+    #sidenavButton{display: none;}
+    #topButton{display: none;}
+    #bottomButton{display: none;}
+}
+
+@media(min-width: 1024px){
+    .sidenav{
+        display: contents;
+    }
+    .sidnavpanel{
+        width: 20%;
+    }
+    #sidenavButton{
+        position: fixed;
+        bottom: 45%;
+        right: 5%;
+        width: 1.5em;
+        height: 1.5em;
+        color:#007bff;
+    }
+    
+    #topButton{
+        position: fixed;
+        bottom: 40%;
+        right: 5%;
+        width: 1.5em;
+        height: 1.5em;
+        color: #007bff;
+    }
+    
+    #bottomButton{
+        position: fixed;
+        bottom: 50%;
+        right: 5%;
+        width: 1.5em;
+        height: 1.5em;
+        color: #007bff;
+    }
+}
+
+#sidenavButton{
+    position: fixed;
+    bottom: 30%;
+    right: 5%;
+    width: 1.5em;
+    height: 1.5em;
+    color:#007bff;
+}
+
+#topButton{
+    position: fixed;
+    bottom: 35%;
+    right: 5%;
+    width: 1.5em;
+    height: 1.5em;
+    color: #007bff;
+}
+
+#bottomButton{
+    position: fixed;
+    bottom: 25%;
+    right: 5%;
+    width: 1.5em;
+    height: 1.5em;
+    color: #007bff;
+}

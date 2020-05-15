@@ -1,0 +1,302 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <button id="navtogglerlg" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- here uses Bootstrap4 collapse nav bar https://getbootstrap.com/docs/4.3/components/navbar/ -->
+        <!-- also uses dropdown component in Bootstrap4 https://getbootstrap.com/docs/4.3/components/navs/#using-dropdowns -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle btn dropdown-submenu font-weight-bold text-primary" href="#" id="navbarDropdownShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+              </a>
+              <div class="dropdown-menu mega-menu container-fluid" aria-labelledby="navbarDropdownShop">
+                    <div class="row">
+                            <!-- Shop side submenu -->
+                            <div class="col-4  tab-menu">
+                              <div class="list-group" id="list-tab-shop" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-comp-list" data-toggle="list" href="#list-comp" role="tab" aria-controls="comp">
+                                    Computers, Tablets & Accessories
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="list-smapp-list" data-toggle="list" href="#list-smapp" role="tab" aria-controls="cellp">
+                                    Cell phones
+                                </a>
+                              </div>
+                            </div>
+                            <!-- Shop side submenu contents -->
+                            <!-- here uses Bootstrap4 tab component https://getbootstrap.com/docs/4.3/components/list-group/#tab -->
+                            <div class="col-8 tab-menu-subcontent">
+                              <div class="tab-content" id="nav-tabContent-shop">
+                                <div class="tab-pane fade show active" id="list-comp" role="tabpanel" aria-labelledby="list-comp-list">
+                                        <div class="row">
+                                                <div class="col-6">
+                                                    <ul class="list-unstyled">
+                                                        <li><p class="mt-3 mb-3 h5">Computers, Tablets & Accessories</p></li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product.jpg" alt="product" width="46" height="48">
+                                                                <span class="media-body">Laptops</span> 
+                                                            </a>                                                             
+                                                        </li>      
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle" src="assets/image/product2.jpg" alt="product">
+                                                                <span class="media-body">MacBooks</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle" src="assets/image/product3.jpg" alt="product">
+                                                                <span class="media-body">2-in-1 Laptops</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Tablets, iPads & eReaders -->
+                                                <div class="col-6">
+                                                    <ul class="list-unstyled">
+                                                        <li><p class="mt-3 mb-3 h5">Tablets, iPads & eReaders</p></li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product.jpg" alt="product" width="46" height="48">
+                                                                <span class="media-body">Apple iPad</span>        
+                                                            </a>                                       
+                                                        </li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle" src="assets/image/product2.jpg" alt="product">
+                                                                <span class="media-body">Android Tablets</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle" src="assets/image/product3.jpg" alt="product">
+                                                                <span class="media-body">Windows Tablets</span>  
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-smapp" role="tabpanel" aria-labelledby="list-smapp-list">
+                                        <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="list-unstyled">
+                                                        <li><p class="mt-3 mb-3 h5">Cell phones</p></li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product4.jpg" alt="product" width="46" height="48">
+                                                                <span class="media-body">iPhone</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product5.jpg" alt="product" width="46" height="48">
+                                                                <span class="media-body">Andriod</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="media mt-1 mb-2">
+                                                            <a routerLink="/product">
+                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product.jpg" alt="product" width="46" height="48">
+                                                                <span class="media-body">Windows Phone</span> 
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                        </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Shop side submenu contents -->
+                    </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn dropdown-submenu font-weight-bold text-primary" href="#" id="navbarDropdownBrand" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Brand
+                    </a>
+                    <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdownBrand">
+                            <div class="row">
+                                    <!-- Brand side submenu -->
+                                    <div class="col-4">
+                                        <div class="list-group" id="list-tab-brand" role="tablist">
+                                            <a class="list-group-item list-group-item-action active" id="list-branda-list" data-toggle="list" href="#list-branda" role="tab" aria-controls="list-branda">
+                                                A-B
+                                            </a>
+                                            <a class="list-group-item list-group-item-action" id="list-brandb-list" data-toggle="list" href="#list-brandb" role="tab" aria-controls="list-brandb">
+                                                C-D
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Brand side submenu contents -->
+                                    <div class="col-8">
+                                        <div class="tab-content" id="nav-tabContent-brand">
+                                                <div class="tab-pane fade show active" id="list-branda" role="tabpanel" aria-labelledby="list-branda-list">
+                                                        <div class="row">
+                                                                <div class="col-6">
+                                                                    <ul class="list-unstyled">
+                                                                        <li><p class="mt-3 mb-3 h5">Brand A</p></li>
+                                                                        <li class="media mt-1 mb-2">
+                                                                            <a routerLink="/product">
+                                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product.jpg" alt="product" width="46" height="48">
+                                                                                <span class="media-body">Apple</span>
+                                                                            </a>
+                                                                        </li>   
+                                                                        <li class="media mt-1 mb-2">
+                                                                            <a routerLink="/product">
+                                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product2.jpg" alt="product" width="46" height="48">
+                                                                                <span class="media-body">Ausus</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="media mt-1 mb-2">
+                                                                            <a routerLink="/product">
+                                                                                <img class="mr-2 prodImg rounded-circle " src="assets/image/product3.jpg" alt="product" width="46" height="48">
+                                                                                <span class="media-body">Acer</span>  
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- Brand B -->
+                                                                <div class="col-md-6">
+                                                                        <ul class="list-unstyled">
+                                                                            <li><p class="mt-3 mb-3 h5">Brand B</p></li>
+                                                                            <li class="media mt-1 mb-2">
+                                                                                <a href="#">
+                                                                                    <img class="mr-2 prodImg rounded-circle " src="assets/image/product5.jpg" alt="product" width="46" height="48">
+                                                                                    <span class="media-body">BenQ</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="media mt-1 mb-2">
+                                                                                <a href="#">
+                                                                                    <img class="mr-2 prodImg rounded-circle " src="assets/image/product3.jpg" alt="product" width="46" height="48">
+                                                                                    <span class="media-body">Bose</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="media mt-1 mb-2">
+                                                                                <a href="#">
+                                                                                    <img class="mr-2 prodImg rounded-circle " src="assets/image/product4.jpg" alt="product" width="46" height="48">
+                                                                                    <span class="media-body">Acer</span> 
+                                                                                </a> 
+                                                                            </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="list-brandb" role="tabpanel" aria-labelledby="list-brandb-list">
+                                                        <div class="row">
+                                                                <div class="col-md-6">
+                                                                        <ul class="list-unstyled">
+                                                                            <li><p class="mt-3 mb-3 h5">Brand C-D</p></li>
+                                                                            <li class="media mt-1 mb-2">
+                                                                                <a href="#">
+                                                                                    <img class="mr-2 prodImg rounded-circle " src="assets/image/product4.jpg" alt="product" width="46" height="48">
+                                                                                    <span class="media-body">Dell</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="media mt-1 mb-2">
+                                                                                <a href="#">
+                                                                                    <img class="mr-2 prodImg rounded-circle " src="assets/image/product5.jpg" alt="product" width="46" height="48">
+                                                                                    <span class="media-body">Denon</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="media mt-1 mb-2">
+                                                                                <a href="#">
+                                                                                    <img class="mr-2 prodImg rounded-circle " src="assets/image/product3.jpg" alt="product" width="46" height="48">
+                                                                                    <span class="media-body">DJI</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- end of Brand side submenu contents -->
+                            </div>
+                    </div>
+            </li>
+          </ul>
+        </div>
+        <!-- for smaller viewpoint -->
+        <div id="navbarSupportedContentSmall">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLinkShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkShop">
+                                <div class="accordion" id="shopdropdown">
+                                    <div class="card">
+                                        <button class="btn btn-link" type="button" id="comptab" data-toggle="collapse" data-target="#comp" aria-expanded="true" aria-controls="comp">
+                                        Computers, Tablets & Accessories
+                                        </button>
+                                        <div id="comp" class="collapse" aria-labelledby="comptab" data-parent="#shopdropdown">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a routerLink="/product">Laptops</a></li>
+                                                <li class="list-group-item"><a routerLink="/product">MacBooks</a></li>
+                                                <li class="list-group-item"><a routerLink="/product">2-in-1 Laptops</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="btn btn-link" id="cellptab" type="button" data-toggle="collapse" data-target="#cellp" aria-expanded="false" aria-controls="cellp">
+                                            Cell Phones
+                                        </button>
+                                        <div id="cellp" class="collapse" aria-labelledby="cellptab" data-parent="#shopdropdown">
+                                            <ul class="list-group">
+                                                    <li class="list-group-item">iPhone</li>
+                                                    <li class="list-group-item">Andriod</li>
+                                                    <li class="list-group-item">Windows Phone</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLinkBrand" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Brand
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkBrand">
+                                <div class="accordion" id="branddropdown">
+                                    <div class="card">
+                                        <button class="btn btn-link" id="brandatab" type="button" data-toggle="collapse" data-target="#brab" aria-expanded="true" aria-controls="brab">
+                                        Brand A-B
+                                        </button>
+                                        <div id="brab" class="collapse" aria-labelledby="brandatab" data-parent="#branddropdown">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a routerLink="/product">Apple</a></li>
+                                                <li class="list-group-item"><a routerLink="/product">Ausus</a></li>
+                                                <li class="list-group-item"><a routerLink="/product">Acer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="btn btn-link" id="brandbtab" type="button" data-toggle="collapse" data-target="#brcd" aria-expanded="false" aria-controls="brcd">
+                                        Brand C-D
+                                        </button>
+                                        <div id="brcd" class="collapse" aria-labelledby="brandbtab" data-parent="#branddropdown">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Dell</li>
+                                                <li class="list-group-item">Dell2</li>
+                                                <li class="list-group-item">Dell3</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+                     
+        </div>
+</nav>
+
